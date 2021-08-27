@@ -15,9 +15,7 @@ function App() {
       </Route>
       <Route path='/book'>
         <main>
-          <div className='container'>
             <BooksInfo />
-          </div>
         </main>
       </Route>
     </Switch>

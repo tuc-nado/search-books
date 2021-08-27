@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Route } from 'react-router-dom';
-import BooksInfo from '../booksInfo';
+import { Link } from 'react-router-dom';
 
 function BooksCard ({img, title, categories, authors, descr}){    
     return(

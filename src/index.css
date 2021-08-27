@@ -240,7 +240,7 @@ body{
 .books__content{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   height: 40%;
   overflow: auto;
 }
@@ -296,17 +296,17 @@ body{
 
 
 /* ----------------------book-info--------------------------------------------------- */
-.book-info{
+.book-info .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 .book-info__img{
   width: 300px;
   height: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.884);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +344,6 @@ body{
 }
 
 .book-info__descr{
-  border: 2px solid white;
   border-radius: 5px;
   margin: 20px 0px;
   padding: 20px;
@@ -355,4 +354,115 @@ body{
   font-size: 16px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.856);
+}
+
+.descr-title{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.932);
+}
+
+
+/* -----------------adaptive-------------------------------- */
+@media (max-width:1270px) {
+  .book-info .container{
+    max-width: 900px;
+  }
+
+  .book-info__img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 1140px){
+  .container{
+    max-width: 970px;
+  }
+
+  .header .container{
+    justify-content: center;
+  }
+
+  
+}
+
+@media (max-width: 900px){
+  .book-info .container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 30px;
+  }
+
+  .book-info__img{
+    align-self: center;
+    width: 400px;
+    height: 400px;
+  }
+
+  .book-info__content{
+    max-width: 100%;
+  }
+
+  .book-info__title{
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 640px){
+  .header .container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .header__title{
+    font-size: 25px;
+  }
+
+  .search__input{
+    width: 300px;
+  }
+
+  .book-info__descr{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 400px){
+  .header__title{
+    font-size: 20px;
+  }
+
+  .search__input{
+    width: 200px;
+    height: 30px;
+  }
+
+  .btn{
+    font-size: 14px;
+  }
+
+  .search__btn{
+    width: 50px;
+    height: 30px;
+  }
+
+  .book-info__img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .book-info__title{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .book-info__descr{
+    font-size: 13px;
+  }
 }

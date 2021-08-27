@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from 'react-redux';
 
 import BooksCard from "./booksCard";
 
@@ -20,4 +21,10 @@ function BooksContainer ({books}){
     )
 }
 
-export default BooksContainer
+const mapStateToProps = state => {
+    return {
+        books: state.books.books
+    }
+}
+
+export default connect(mapStateToProps, null)(BooksContainer)

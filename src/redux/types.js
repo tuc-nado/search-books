@@ -1,0 +1,10 @@
+export const ADD_BOOKS = 'ADD_BOOKS'
+export const INPUT_VALUE = 'INPUT_VALUE'
+export const CHANGE_CATEGORY = 'CHANGE_CATEGORY'
+export const CHANGE_SORTING = 'CHANGE_SORTING'
+export const SET_START_INDEX = 'SET_START_INDEX'
+export const SET_TOTAL_ITEMS = 'SET_TOTAL_ITEMS'
+export const SET_LOADING = 'SET_LOADING'
+
+
+
